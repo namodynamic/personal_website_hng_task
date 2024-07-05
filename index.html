@@ -1,42 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Tech Goals</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>My Tech Goals</h1>
-  </header>
-  <main>
-    <div class="profile">
-      <img src="images/profilepic.png" alt="Slack Profile Picture" width="200" height="200" data-testid="slackProfilePicture">
-      <div>
-        <h2 data-testid="slackDisplayName">Nnamdi Cyprian Ekechi</h2>
-        <p data-testid="slackEmail">ekechinnamdi@gmail.com</p>
-        <p>Current Time in UTC: <span data-testid="currentTimeUTC"></span></p>
-        <p>Current Day: <span data-testid="currentDay"></span></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Tech Goals</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"
+              ></path>
+            </svg>
+            <span class="sr-only">My Personal Website</span>
+          </a>
+        </div>
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Goals</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <p>Over the next 2 years, my tech goals are to:</p>
-    <ul>
-      <li>Become proficient in React.js and build complex web applications</li>
-      <li>Contribute to open-source projects and build a strong portfolio</li>
-      <li>Enhance my skills in data structures, algorithms, and problem-solving</li>
-      <li>Explore machine learning and AI to understand their applications in web development</li>
-      <li>Actively participate in the tech community, attend meetups, and network with other developers</li>
-    </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="text-xxl hero-heading">Embracing the Tech Frontier</h1>
+          <p class="hero-text">
+            As a passionate tech enthusiast, I'm excited to embark on a journey
+            of growth and innovation over the next two years.
+          </p>
+
+          <div class="hero-buttons">
+            <a
+              href="https://scrapeanyweb.site"
+              data-testid="scrapeanywebLink"
+              class="btn"
+            >
+              Explore my Goals</a
+            >
+            <a
+              href="https://hng.tech/learn"
+              data-testid="hngLink"
+              class="btn-primary btn"
+            >
+              Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="profile">
+      <div class="container">
+        <div class="profile-img">
+          <img
+            src="images/profilepic.png"
+            alt="Slack Profile Picture"
+            width="400"
+            height="400"
+            data-testid="slackProfilePicture"
+          />
+        </div>
+        <div class="profile-info">
+          <p>
+            Slack Display Name:
+            <span data-testid="slackDisplayName">namoDynamic</span>
+          </p>
+          <p>Current Time in UTC: <span data-testid="currentTimeUTC"></span></p>
+          <p>Current Day of the week: <span data-testid="currentDay"></span></p>
+          <p>
+            Slack Email:
+            <span data-testid="slackEmail">ekechinnamdi@gmail.com</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="goals">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="text-xxl">My Tech Goals for the Next 2 Years</h2>
+          <p>
+            From mastering new programming languages to contributing to
+            open-source projects, I'm committed to expanding my technical
+            expertise and making a meaningful impact in the tech community.
+          </p>
+        </div>
+        <div>
+          <div class="goals-content">
+            <ul>
+              <li>
+                <div>
+                  <h3 class="text-xl">Master a New Programming Language</h3>
+                  <p>
+                    I plan to dive deep into a new programming language, such as
+                    Rust or Go, to broaden my skill set and explore different
+                    paradigms.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3 class="text-xl">Contribute to Open-Source Projects</h3>
+                  <p>
+                    I'm eager to give back to the tech community by contributing
+                    to open-source projects, whether through bug fixes, feature
+                    enhancements, or documentation improvements.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3 class="text-xl">Launch a Personal Project</h3>
+                  <p>
+                    I'm excited to bring my own ideas to life by launching a
+                    personal project, whether it's a web application, a mobile
+                    app, or a tool that solves a specific problem.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <div class="links">
         <a href="https://hng.tech/learn" data-testid="hngLink">HNG Learn</a>
         <a href="https://keyword.dog" data-testid="keywordLink">Keyword.dog</a>
-        <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrapeanyweb</a>
+        <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink"
+          >Scrapeanyweb</a
+        >
       </div>
     </footer>
-  </main>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
